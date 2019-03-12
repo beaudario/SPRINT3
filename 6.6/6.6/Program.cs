@@ -10,7 +10,8 @@ namespace _6._6
     {
         static void Main(string[] args)
         {
-            Console.Write("je moeder");
+            Console.WriteLine("je moeder is een plopkoek");
+            Console.WriteLine("xx dario");
             Console.ReadKey();
         }
     }
