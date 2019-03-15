@@ -8,7 +8,7 @@ namespace opdracht_6._3
         {
             Console.WriteLine("Voer hier je datum in: ");
             DateTime date = Convert.ToDateTime(Console.ReadLine());
-            Console.WriteLine(Zodiac(date));
+            Console.WriteLine(Zodiac((date)));
 
         }
 
