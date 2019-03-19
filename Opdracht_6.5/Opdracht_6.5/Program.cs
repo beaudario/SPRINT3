@@ -6,14 +6,22 @@ namespace Opdracht_6._5
     {
         static void Main(string[] args)
         {
-            Double UserInput;
+            int UserInput;
             Console.WriteLine("Vul een getal in voor het aantal lege regels dat u wilt: ");
-            UserInput = Convert.ToDouble(Console.ReadLine());
+            UserInput = Convert.ToInt32(Console.ReadLine());
+            LegeRegels(UserInput);
+            
         }
 
-        public class LegeRegels
+
+        public static void LegeRegels(int regels)
         {
-            
+           for(int i = 0;i <= regels ;i++)
+            {
+                Console.WriteLine(" ");
+
+            }
+            Console.ReadKey();
         }
     }
 }
