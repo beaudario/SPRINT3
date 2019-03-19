@@ -41,6 +41,7 @@ namespace Opdracht_6_2
             {
                 Console.WriteLine("Het is Doordeweeks!");
             }
+            Console.ReadKey();
         }
     }
 }
