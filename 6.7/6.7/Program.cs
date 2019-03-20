@@ -10,10 +10,30 @@ namespace _6._7
     {
         static void Main(string[] args)
         {
-            Console.Write("Hoelang mag de Fibonnaci reeks zijn (geef aan in getallen): ");
+            Console.Write("Hoeveel getallen mag de reeks bevatten? (geef aan in getallen): ");
             int lenght = Convert.ToInt32(Console.ReadLine());
+
+            for (int i = 0; i < lenght; i++)
+            {
+                Console.Write("{0} ", Fibonacci(i));
+            }
+
+            Console.ReadKey();
         }
 
-        private static int fibonnaci(int len)
+        public static int Fibonacci(int len)
+        {
+            int firstNum = 0;
+            int secondNum = 1;
+            
+            for (int i = 0; i < len; i++)
+            {
+                int sum = firstNum;
+                firstNum = secondNum;
+                secondNum = sum + secondNum;
+            }
+
+            return firstNum;
+        }
     }
 }
