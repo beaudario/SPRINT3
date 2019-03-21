@@ -16,6 +16,7 @@ namespace _6._10
             int secondNumber = int.Parse(Console.ReadLine());
 
             Swap(ref firstNumber, ref secondNumber);
+
             Console.WriteLine("Het eerste getal is nu {0}", firstNumber);
             Console.WriteLine("Het tweede getal is nu {0}", secondNumber);
             Console.ReadKey();
@@ -23,9 +24,9 @@ namespace _6._10
 
         static void Swap(ref int firstNum, ref int secondNum)
         {
-            int temp = firstNum;
-            firstNum = secondNum;
-            secondNum = firstNum;
+            firstNum = secondNum - firstNum;
+            secondNum = secondNum - firstNum;
+            firstNum = firstNum + secondNum;
         }
     }
 }
