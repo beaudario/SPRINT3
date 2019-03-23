@@ -43,6 +43,7 @@ namespace _7._12
             Console.WriteLine();
 
             Console.Write("Het versleutelde woord is: {0}", (Encrypter1(InputEn, KeyEn)));
+            Console.WriteLine();
             Console.ReadKey();
 
             Choice();
@@ -74,6 +75,7 @@ namespace _7._12
             Console.WriteLine();
 
             Console.Write("Het ontsleutelde woord is: {0}", (Decrypter1(InputDe, KeyDe)));
+            Console.WriteLine();
             Console.ReadKey();
 
             Choice();
