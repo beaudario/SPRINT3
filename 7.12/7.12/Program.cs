@@ -15,7 +15,7 @@ namespace _7._12
 
         public static void Choice()
         {
-            Console.WriteLine("\n ********************************** \n");
+            Console.Write("\n ********************************** \n");
             Console.Write("[V]ersleutelen of [O]ntsleutelen: ");
             string VO = Console.ReadLine();
 
