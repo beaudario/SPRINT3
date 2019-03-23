@@ -42,9 +42,9 @@ namespace _7._12
             int KeyEn = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            Console.Write("Het versleutelde woord is: ");
-            Console.WriteLine(Encrypter1(InputEn, KeyEn));
+            Console.Write("Het versleutelde woord is: {0}", (Encrypter1(InputEn, KeyEn)));
             Console.ReadKey();
+
             Choice();
         }
 
@@ -73,9 +73,9 @@ namespace _7._12
             int KeyDe = int.Parse(Console.ReadLine());
             Console.WriteLine();
 
-            Console.Write("Het ontsleutelde woord is: ");
-            Console.WriteLine(Decrypter1(InputDe, KeyDe));
+            Console.Write("Het ontsleutelde woord is: {0}", (Decrypter1(InputDe, KeyDe)));
             Console.ReadKey();
+
             Choice();
         }
 
