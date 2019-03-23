@@ -26,18 +26,18 @@ namespace _7._12
 
         private static string Encrypter(string Input2, int Shift)
         {
-            string output = null;
-            char[] A = null;
+            string Output = null;
+            char[] A;
             A = Input2.ToCharArray();
-            int temp;
+            int Temp;
 
             for (int i = 0; i < Input2.Length; i++)
             {
-                temp = (int)(A[i] + Shift);
-                output += (char)temp;
+                Temp = (int)(A[i] + Shift);
+                Output += (char)Temp;
             }
 
-            return output;
+            return Output;
         }
 
     }
