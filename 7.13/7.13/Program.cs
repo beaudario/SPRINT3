@@ -10,12 +10,21 @@ namespace _7._13
     {
         static void Main(string[] args)
         {
-            // The code provided will print ‘Hello World’ to the console.
-            // Press Ctrl+F5 (or go to Debug > Start Without Debugging) to run your app.
-            Console.WriteLine("Hello World!");
-            Console.ReadKey();
+            Console.Write("Geef een woord om te versleutelen: ");
+            string Input = Console.ReadLine();
+            Console.WriteLine();
 
-            // Go to http://aka.ms/dotnet-get-started-console to continue learning how to build a console app! 
+            Console.Write("Geef een key (min./max. de lengte van het woord die word versleuteld): ");
+            string Key = Console.ReadLine();
+            Console.WriteLine();
+
+            Console.Write("Het versleutelde woord is: {0}", Encrypter(Input, Key));
+            Console.ReadKey();
+        }
+
+        public static string Encrypter(string Input, string Key)
+        {
+                       
         }
     }
 }
