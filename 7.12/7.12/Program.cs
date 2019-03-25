@@ -36,6 +36,7 @@ namespace _7._12
         {
             Console.Write("Geef een woord om te versleutelen: ");
             string InputEn = Console.ReadLine();
+            
             Console.WriteLine();
 
             Console.Write("Geef een key: ");
