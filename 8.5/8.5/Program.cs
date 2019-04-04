@@ -25,11 +25,11 @@ namespace ConsoleApp1
             for (int i = 0; i < 100; i++)
             {
 
-                int getal1 = r.Next(int.MaxValue);
-                int getal2 = r.Next(int.MaxValue);
-                int product = getal1 * getal2;
+                long getal1 = r.Next(int.MaxValue);
+                long getal2 = r.Next(int.MaxValue);
+                long product = getal1 * getal2;
 
-                Console.WriteLine("{0} * {1} = {3}", getal1, getal2, product);
+                Console.WriteLine("{0} * {1} = {2}", getal1, getal2, product);
             }
 
             Console.ReadKey();
