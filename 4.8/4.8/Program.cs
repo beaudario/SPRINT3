@@ -14,7 +14,7 @@ namespace _4._8
             Console.WriteLine("Hey, geef een getal in en krijg de maand in het de taal corresponderend met het getal.");
             Console.WriteLine("--------------------------------------------------------------------------------------");
             Console.WriteLine("1. Nederlands");
-            1 = Convert.ToString(Console.ReadLine());
+            string 1 = (Console.ReadLine());
             Console.WriteLine("2. Duits");
             Console.WriteLine("3. Engels");
             Console.WriteLine("4. Frans");
