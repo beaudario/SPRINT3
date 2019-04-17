@@ -14,14 +14,20 @@ namespace _8._4
     {
         static void Main(string[] args)
         {
+            //DeclaringVariable
             IPAddress ip;
+
+            //UserInput
             Console.Write("Geef IP-Adres: ");
             string IpAddress = Console.ReadLine();
 
+            //DeclaringVariable
             bool IpCheck = IPAddress.TryParse(IpAddress, out ip);
 
+            //IfStatement
             if (IpCheck)
             {
+                //ShowResult
                 Console.WriteLine("Dit adres bereikbaar");
             }
             else
