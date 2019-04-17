@@ -41,7 +41,7 @@ namespace _6._12
             Console.ReadKey();
         }
 
-        //Algorithms
+        //CheckingForLeapyear
         private static bool IsSchrikkeljaar(double year)
         {
             if (year % 4 == 0)
