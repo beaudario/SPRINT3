@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opdracht 1</title>
+</head>
+<body>
+	<script>
+		//DeclaringArray
+		var dag = new Array(
+			"zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
+
+		//DeclaringDateAndDayVariable
+		var date = new Date();
+		var huidigeDag = date.getDay();
+
+		//ShowOutcome
+		document.write(
+			"<br>De huidige dag is: " + dag[huidigeDag]);
+	</script>
+</body>
+</html>

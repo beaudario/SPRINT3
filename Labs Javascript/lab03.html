@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Lab 03</title>
+</head>
+<body>
+	<script>
+		//DeclaringArray
+		var testarray = new Array("een", "twee", 3, "vier");
+
+		//Push
+		testarray.push(5);
+
+		//ShowArray
+		document.write(
+			"<br>" + testarray);
+
+		//ShowDatatype
+		document.write(
+			"<br>Datatype is: " + typeof testarray[4]);
+
+		//DeletingElement
+		testarray.splice(4, 1);
+
+		//ShowArray
+		document.write(
+			"<br>" + testarray);
+
+		//AddElement
+		testarray.unshift("nul");
+
+		//ShowArray
+		document.write(
+			"<br>" + testarray);
+
+		//DeleteElement
+		delete testarray[0];
+
+		//ShowDatatype
+		document.write(
+			"<br>Datatype is: " + typeof testarray[0]);
+
+		//DeleteElement
+		testarray.splice(0, 1);
+
+		//ShowArray
+		document.write(
+			"<br>" + testarray);
+
+		//DeleteElement
+		testarray.splice(1, 1);
+
+		//ShowArray
+		document.write(
+			"<br>" + testarray);
+
+		//DeleteElement
+		testarray.splice(2, 1);
+
+		//ShowArray
+		document.write(
+			"<br>" + testarray);
+	</script>
+</body>
+</html>

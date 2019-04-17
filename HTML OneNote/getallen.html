@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opdracht 4</title>
+</head>
+<body>
+	<script>
+		//DeclaringVariablesAndArray
+		var getallen = new Array();
+		var i = 0;
+
+		//WhileLoop
+		while (i != 3) {
+			//Push
+			getallen.push(parseInt(prompt("voer getal in")));
+			i++;
+		}
+
+		//DeclaringVariable
+		var som = getallen[0] + getallen[1] + getallen[2]; 
+
+		//ShowOutcome
+		document.write("<br>" + getallen[0] + " + " + getallen[1] + " + " + getallen[2] + " = " + som);
+	</script>
+</body>
+</html>

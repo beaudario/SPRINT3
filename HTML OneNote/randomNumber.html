@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opdracht 4</title>
+</head>
+<body>
+<script>
+	//DeclaringVariables
+	var vraag ="Kies een nummer onder de 10";
+	var antwoord = 80;
+	var randomNumber = 7;
+	var goed = "<h2>Prima, ga zo door!</h2>";
+	var fout = "<h2>Jammer, volgende keer beter!</h2>";
+
+	//ShowPrompt
+	var gegeven = prompt(vraag);
+
+	//IfStaements
+	if (gegeven == antwoord) {
+		//ShowOutcome
+		document.getElementById("goedFout").innerHTML = goed;
+		}
+	else {
+		document.getElementById("goedFout").innerHTML = fout;
+		}
+</script>
+</body>
+</html>

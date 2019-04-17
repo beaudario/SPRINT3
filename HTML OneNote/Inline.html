@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opdracht 1</title>
+</head>
+<body>
+	<div>
+		<!--MakeAbutton-->
+		<button onclick="toonPrompt()" id="btnPrompt">Voer code in</button>
+	</div>
+	<div id="divResult">	
+	</div>
+	<script>
+		//MakeAfunction
+		function toonPrompt() {
+			//ShowPrompt
+			var code = prompt("Vul uw promotiecode in", "uw code");
+
+			//DeclaringVariables
+			var tekst = "De code die u invoerde was: " + code;
+
+			//ShowOutcome
+			document.getElementById("divResult").innerHTML = tekst;
+		}
+	</script>
+</body>
+</html>

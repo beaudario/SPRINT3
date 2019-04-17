@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opdracht 6</title>
+</head>
+<body>
+	<script>
+		//DeclaringVariables
+		var getal1 = prompt("Geef getal één");
+		var getal2 = prompt("Geef getal twee");
+		var string = prompt("'plus', 'min', 'maal' of 'delen'");
+
+		//IfStatements
+		if (string == "plus") {
+			//DeclaringVariable
+			var uitkomst = getal1 + getal2;
+
+			//ShowOutcome
+			document.write( getal1 + " + " + getal2 + " = " + uitkomst);
+		}
+
+		else if (string == "min") {
+			var uitkomst = getal1 - getal2;
+			document.write(
+				getal1 + " - " + getal2 + " = " + uitkomst);
+		}
+
+		else if (string == "maal") {
+			var uitkomst = getal1 * getal2;
+			document.write(
+				getal1 + " * " + getal2 + " = " + uitkomst);
+		}
+
+		else if (string == "delen") {
+			var uitkomst = getal1 / getal2;
+			document.write(
+				getal1 + " / " + getal2 + " = " + uitkomst);
+		}
+	</script>
+</body>
+</html>

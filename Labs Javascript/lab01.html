@@ -1,0 +1,42 @@
+x<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Lab 01</title>
+	<!--dit script werkt met variabelen
+		auteur: Dario Douma
+		Datum: 5-4-2019
+	-->
+</head>
+<body>
+	<h2>Lab 01</h2>
+	<h3>Factuur</h3>
+	<script>
+		//ShowPrompt
+		//DeclaringVariables
+		var klantnaam = prompt("voer je eigen naam in");
+		var aantal = parseInt(prompt("aantal boeken te bestellen?"));
+		var titel = "JavaScript";
+		var prijs = 29.90;
+		var bedrag = aantal * prijs;
+		var btw = bedrag * 0.06;
+		var totaal = bedrag + btw;
+
+		//ShowVariables
+		document.write(
+			"<br>Bedankt voor je bestelling: " + klantnaam);
+		document.write(
+			"<br>Boektitel is: " + titel);
+		document.write(
+			"<br>Aantal te bestellen: " + aantal);
+		document.write(
+			"<br>Prijs per boek is: " + prijs.toFixed(2));
+		document.write(
+			"<br>Bedrag is: " + bedrag);
+		document.write(
+			"<br>BTW is: " + btw.toFixed(2));
+		document.write(
+			"<br>Totaal inclusief BTW is: " + totaal.toFixed(2));
+	</script>
+</body>
+</html>
