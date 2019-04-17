@@ -10,6 +10,7 @@ namespace _7._9
     {
         static void Main(string[] args)
         {
+            //DeclaringArray
             string[,] Info =
             {
                 {"Dario Douma", "0311264", "25 November 2001", "Enschede"},
@@ -18,8 +19,10 @@ namespace _7._9
                 {"Mohammed Yasin", "c", "d", "Enschede" }
             };
 
+            //ForLoop
             for (int i = 0; i < (Info.Length / 4); i++)
             {
+                //ShowArray
                 Console.WriteLine("{0} ({1}) is geboren op {2} in {3}", Info[i, 0], Info[i, 1], Info[i, 2], Info[i, 3]);
             }
             Console.ReadKey();
