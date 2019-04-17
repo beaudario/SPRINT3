@@ -11,17 +11,23 @@ namespace Opdracht_6._11
     {
         static void Main(string[] args)
         {
+            //DeclaringVariables
             Double minSom;
             Double plusSom;
             Double deelSom;
             Double keerSom;
             Double moduloSom;
+
+            //UserInput
             Console.WriteLine("Type het eerste getal: ");
             Double x = Convert.ToDouble(Console.ReadLine());
             Console.WriteLine("Type het tweede getal: ");
             Double y = Convert.ToDouble(Console.ReadLine());
+
+            
             Calculate(Convert.ToDouble(x), Convert.ToDouble(y), out plusSom, out minSom, out deelSom, out keerSom, out moduloSom);
             {
+                //ShowResult
                 Console.WriteLine(x + " + " + y + " = {0}\n" +
                                   x + " - " + y + " = {1}\n" +
                                   x + " / " + y + " = {2}\n" +
@@ -29,22 +35,19 @@ namespace Opdracht_6._11
                                   x + " % " + y + " = {4}",
                                   plusSom, minSom, deelSom, keerSom, moduloSom);
             }
-            Console.ReadKey();
-
-            
+            Console.ReadKey(); 
         }
 
+        //Method
         public static void Calculate(Double x, Double y, out Double plusSom, out Double minSom, out Double deelSom, out Double keerSom, out Double moduloSom)
         {
+            //Calculating
             plusSom = x + y;
             minSom = x - y;
             deelSom = x / y;
             keerSom = x * y;
-            moduloSom = x % y;
-            
+            moduloSom = x % y; 
         }
-   
-         
     }
 }
 
