@@ -10,6 +10,7 @@ namespace _7._13
     {
         static void Main(string[] args)
         {
+            //UserInput
             Console.Write("Geef een woord om te versleutelen: ");
             string Input = Console.ReadLine();
             Console.WriteLine();
@@ -18,10 +19,12 @@ namespace _7._13
             string Key = Console.ReadLine();
             Console.WriteLine();
 
+            //ShowResult
             Console.Write("Het versleutelde woord is: {0}", Encrypter(Input, Key));
             Console.ReadKey();
         }
 
+        //Method
         public static string Encrypter(string Input, string Key)
         {
                        
