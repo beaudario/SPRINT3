@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opdracht 2</title>
+</head>
+<body>
+	<script>
+		//DeclaringArrays
+		var dag = new Array(
+			"zondag", "maandag", "dinsdag", "woensdag", "donderdag", "vrijdag", "zaterdag");
+		var spreekwoord = new Array(
+			"Eigen haard is goud waard", "Haastige spoed is zelden goed", "Beter laat dan nooit", "Wie het laatst lacht, lacht het best", "De morgenstond heeft goud in de mond", "Zoals het klokje thuis tikt, tikt het nergens", "Oost west, thuis best");
+
+		//DeclaringVariables
+		var date = new Date();
+		var huidigeDag = date.getDay();
+
+		//ShowOutcome
+		document.write(
+			"<br>Het is vandaag " + dag[huidigeDag]);
+		document.write(
+			"<br>De tip van de dag is: " + spreekwoord[huidigeDag] + "!");
+	</script>
+</body>
+</html>

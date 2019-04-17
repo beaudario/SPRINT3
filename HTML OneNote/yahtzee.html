@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opdracht 5</title>
+</head>
+<body>
+	<div>
+		<!--DeclaringAbutton-->
+		<button onclick="toonArray()" id="btnArray">Gooi dobbelstenen</button>
+	</div>
+	<div id="resultaat">
+	</div>
+	<script>
+		
+		//MakeAbutton
+		function toonArray() {
+			//DeclaringArrayAndVariable
+			var dobbelstenen = new Array();
+			var i = 0;
+
+			//WhileLoop
+			while (i != 5) {
+				dobbelstenen.push(Math.random(1, 6));
+			}
+
+			//ForLoop
+			for (var j = 0; j < 4; i++) {
+				html += "<p>" + dobbelstenen[j] + "<p>";
+			}
+
+			//ShowOutcome
+			document.getElementById("resultaat").innerHTML = html;
+		}
+		
+	</script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+	<meta charset="utf-8">
+	<title>Opgave 3</title>
+</head>
+<body>
+	<div id=goedFout>
+	</div>
+	<script>
+		//DeclaringVariables
+		var vraag ="Hoeveel is 20 + 60 ?";
+		var antwoord = 80;
+		var goed = "<h2>Prima, ga zo door!</h2>";
+		var fout = "<h2>Jammer, volgende keer beter!</h2>";
+		var gegeven = prompt(vraag);
+
+		//IfStatement
+		if (gegeven == antwoord) {
+			//ShowOutcome
+			document.getElementById("goedFout").innerHTML = goed;
+		}
+		else {
+			//ShowOutcome
+			document.getElementById("goedFout").innerHTML = fout;
+		}
+	</script>
+</body>
+</html>
